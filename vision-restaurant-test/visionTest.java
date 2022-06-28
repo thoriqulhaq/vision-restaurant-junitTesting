@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 public class visionTest {
     
     // Test 1
-    
+    @Test
     public static  double calcValidation(String m, double p, int quantity, double currentTotal) {
         double total = currentTotal;
         
@@ -20,7 +20,7 @@ public class visionTest {
     }
     
     // Test 2
-    
+    @Test
     public static int inputHandling(int input, int currentAddState) {
         int addState = currentAddState;
         
@@ -33,7 +33,7 @@ public class visionTest {
     }
     
     // Test 3
-    
+    @Test
     public static void orderHistory(ArrayList<OrderList> OrderData) {
         for (int i = 0; i < OrderData.size(); i++) {
             System.out.println((i + 1) + ". " + OrderData.get(i).getMenuName() + " \t\tRM " + OrderData.get(i).getPrice() + " \t\t" + OrderData.get(i).getQuantity());
@@ -41,7 +41,7 @@ public class visionTest {
     }
     
     // Test 4
-    
+    @Test
     public static String[] getMenu(char inputMenu) {
         String m = "";
         double p = 0;
@@ -81,7 +81,7 @@ public class visionTest {
     }
 
     // Test 5
-
+    @Test
     public double calcTotal()
     {
         double totalPrice = 0.0;
@@ -95,7 +95,7 @@ public class visionTest {
     }
 
     // Test 6
-    
+    @Test
     public void displayTotalPayment()
     {
         if (balance < calcTotal() || calcTotal() == 0)
